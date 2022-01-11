@@ -37,3 +37,8 @@ console.log("\n********************************************************");
 console.log("An array of pokemon objects that are 'fire' type\n");
 
 console.log( pokemon.filter( pkmn => pkmn.types.includes("fire") ) );
+
+console.log("\n********************************************************");
+console.log("An array of pokemon objects that have more than one type\n");
+
+console.log( pokemon.filter( pkmn => pkmn.types.length > 1 ) );
