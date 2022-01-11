@@ -42,3 +42,8 @@ console.log("\n********************************************************");
 console.log("An array of pokemon objects that have more than one type\n");
 
 console.log( pokemon.filter( pkmn => pkmn.types.length > 1 ) );
+
+console.log("\n********************************************************");
+console.log("An array with just the names of the pokemon\n");
+
+console.log( pokemon.map( pkmn => pkmn.name ) );
