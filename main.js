@@ -72,3 +72,8 @@ const secondTypeFlyingPkmn = pokemon.filter( pkmn => {
     return false;
 } );
 console.log( secondTypeFlyingPkmn.map( pkmn => pkmn.types[0] ) );
+
+console.log("\n********************************************************");
+console.log("A count of the number of pokemon that are normal type\n");
+
+console.log( pokemon.filter( pkmn => pkmn.types.includes('normal') ).length );
