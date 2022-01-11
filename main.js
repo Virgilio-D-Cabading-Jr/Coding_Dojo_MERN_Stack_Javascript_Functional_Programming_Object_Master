@@ -32,3 +32,8 @@ console.log("********************************************************");
 console.log("An array of pokemon objects where the id is evenly divisible by 3\n");
 
 console.log( pokemon.filter( pkmn => pkmn.id % 3 === 0 ) );
+
+console.log("\n********************************************************");
+console.log("An array of pokemon objects that are 'fire' type\n");
+
+console.log( pokemon.filter( pkmn => pkmn.types.includes("fire") ) );
