@@ -58,4 +58,17 @@ console.log("\n********************************************************");
 console.log("An array with just the names of the pokemon whose only type is poison\n");
 
 const poisonPkmn = pokemon.filter( pkmn => pkmn.types.length === 1 && pkmn.types.includes("poison") );
-console.log( poisonPkmn );
+console.log( poisonPkmn.map( pkmn => pkmn.name ));
+
+console.log("\n********************************************************");
+console.log("An array containing just the first type of all the pokemon whose second type is 'flying'\n");
+
+const secondTypeFlyingPkmn = pokemon.filter( pkmn => {
+    if (pkmn.types.length > 1) {
+        if (pkmn.types[1] === "flying") {
+            return true;
+        }
+    }
+    return false;
+} );
+console.log( secondTypeFlyingPkmn.map( pkmn => pkmn.types[0] ) );
